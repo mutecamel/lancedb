@@ -2186,7 +2186,7 @@ class AsyncTable:
         2  3  y
         3  4  z
         """
-        on = [on] if isinstance(on, str) else list(on.iter())
+        on = [on] if isinstance(on, str) else list(on)
 
         return LanceMergeInsertBuilder(self, on)
 
